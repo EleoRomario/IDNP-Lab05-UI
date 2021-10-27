@@ -124,7 +124,6 @@ public class BarChart extends View {
             Rect bound = new Rect();
             yLabelPainter.getTextBounds(label,0,label.length(),bound);
 
-
             y = padding+i*spacing;
             canvas.drawLine(padding+yLabelWidth,y,gridRight,y,guidePainter);
             canvas.drawText(label, padding+yLabelWidth, y+bound.height()/2, yLabelPainter);
